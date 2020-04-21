@@ -2,7 +2,10 @@
 Data and source files for (insert link and DOI here)
 
 ## Anonymised data
-Anonymised data for this study is available as a CSV [here](./Anon_Data_April_2020.csv).
+Anonymised data for this study is available as a CSV [here](./Anon_Data_April_2020.csv). This dataset has been altered to adhere to GDPR guidelines.
+
+## SPSS Syntax (limited)
+SPSS syntax for preliminary data configuration is available [here](./GitHub_Syntax.sps). Please be aware some section have been redacted for GDPR purposes.
 
 ## R analysis code
 The R analysis code for this study is available [here](./R_ANOVA_LME.R).
