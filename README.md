@@ -5,7 +5,7 @@ Data and source files for (insert link and DOI here)
 Anonymised data for this study is available as a CSV [here](./Anon_Data_April_2020.csv). This dataset has been altered to adhere to GDPR guidelines.
 
 ## SPSS Syntax (limited)
-SPSS syntax for preliminary data configuration is available [here](./GitHub_Syntax.sps). Please be aware some section have been redacted for GDPR purposes.
+SPSS syntax for preliminary data configuration is available [here](./GitHub_Syntax.sps). Please be aware some sections have been redacted for GDPR purposes.
 
 ## R analysis code
 The R analysis code for this study is available [here](./R_ANOVA_LME.R).
@@ -13,7 +13,7 @@ The R analysis code for this study is available [here](./R_ANOVA_LME.R).
 This file is in fact an SPSS out-file and as such contains several variables not absolute necessary for use in R, such as `FILTER` which is just a disjunction (OR) of `Filter_insuff_data` and `Filter_sig_dif_base` effected in SPSS syntax.
 
 ### Variables
-A description of variables used and their logcal coding. As mentioned, some variables are not strictly speaking necessary but were calculated using SPSS syntax (e.g. `ALLOW` is 0 in certain logical cases, but also iff trial `MEP_AUC` exceeds 3SDs from participants' individual mean as calculated in SPSS. Your mileage may vary slighly if performing each operation in R from raw data). 
+A description of variables used and their logical coding. As mentioned, some variables are not strictly speaking necessary but were calculated using SPSS syntax (e.g. `ALLOW` is 0 in certain logical cases, but also iff trial `MEP_AUC` exceeds 3SDs from participants' individual mean as calculated in SPSS. Your mileage may vary slighly if performing each operation in R from raw data). 
 
 * `MEP`- individual MEP number for that participant, 1 - 240 in chronological succession
 * `Part_Anon`- Anonymised Participant data
