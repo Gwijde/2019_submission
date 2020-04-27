@@ -15,13 +15,13 @@ head(Data)
 
 
 # Removing if individual trial not acceptable due to noise, 1st trial, etc.
-test <- filter(test, ALLOW == 1)
+test <- filter(Data, ALLOW == 1)
 
 # Removing participants if
-#  Filter_sig_dif_base == 0 (removes participants with significantly different base)
-#  Filter_insuff_data == 0 (removes participants with insufficient data (<30/timepoint/condition))
-#  FILTER == 0 (if either of the above are true (leftover from SPSS))
-test2 <- filter(Data, Filter_sig_dif_base == 0)
+#  Filter_sig_dif_base == 1 (removes participants with significantly different base)
+#  Filter_insuff_data == 1 (removes participants with insufficient data (<30/timepoint/condition))
+#  FILTER == 1 (if either of the above are true (leftover from SPSS))
+test2 <- filter(test, Filter_sig_dif_base == 0)
 
 
 # Ordering data structure, re-leveling & defining items as factors
